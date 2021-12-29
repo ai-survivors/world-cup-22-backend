@@ -1,3 +1,17 @@
+from django.contrib.auth import get_user_model
 from django.db import models
 
-# Create your models here.
+class Ticket(models.Model):
+    title = models.CharField(max_length=64)
+
+    created_date = models.DateTimeField(auto_now = False, auto_now_add=True)
+    updated_date = models.DateTimeField(auto_now = True, auto_now_add=False)
+    owner = models.ForeignKey(
+        get_user_model(), on_delete=models.CASCADE, null=True, blank=True
+    )
+    description = models.TextField(default="", null=True, blank=True)
+    price= models.FloatField( default=None)
+   
+
+    def __str__(self):
+        return self.title
