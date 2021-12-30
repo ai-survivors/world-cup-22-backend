@@ -4,4 +4,5 @@ from worldcup22.models import Ticket
 class TicketSerializer(serializers.ModelSerializer):
     class Meta:
         model = Ticket
-        fields = ('title','description','created_date', 'updated_date', 'price')
+        fields = '__all__'
+        # fields = ('id','title','description','created_date', 'updated_date', 'price')
