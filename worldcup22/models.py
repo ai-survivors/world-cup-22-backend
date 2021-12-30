@@ -1,5 +1,6 @@
 from django.contrib.auth import get_user_model
-from django.db import models
+from django.db import models 
+from django.db.models import F
 
 
 
@@ -18,7 +19,7 @@ class Match(models.Model):
    
     title = models.CharField(max_length=64)
     stadium = models.CharField(max_length=64,default="")
-    number_of_tickets=models.IntegerField()
+    number_of_tickets=models.IntegerField(default=0)
     team1 = models.ForeignKey(
         Team,related_name='team1', on_delete=models.CASCADE, null=True, blank=True
     )
@@ -53,12 +54,12 @@ class Ticket(models.Model):
 
     created_date = models.DateTimeField(auto_now_add = True)
     updated_date = models.DateTimeField(auto_now = True)
-
-    def update_ticket_number(self):
-        match = self.match
-        match.number_of_tickets +=  1
-        match.save()
-       
+    purchased = models.BooleanField(default = False)
+    
+    def save(self, *args, **kwargs):
+        super(Ticket, self).save(*args, **kwargs)
+        self.match.number_of_tickets = F('number_of_tickets')+1
+        self.match.save()
 
     def __str__(self):
         return self.title
