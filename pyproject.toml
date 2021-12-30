@@ -10,6 +10,7 @@ Django = "^4.0"
 djangorestframework = "^3.13.1"
 django-cors-headers = "^3.10.1"
 Pillow = "^8.4.0"
+djangorestframework-simplejwt = "^5.0.0"
 
 [tool.poetry.dev-dependencies]
 black = "^21.12b0"
