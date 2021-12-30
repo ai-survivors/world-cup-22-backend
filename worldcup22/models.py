@@ -1,18 +1,64 @@
 from django.contrib.auth import get_user_model
 from django.db import models
 
-class Ticket(models.Model):
+
+
+class Team(models.Model):
+    country = models.CharField(max_length=64)
+    flag= models.TextField(default="",)
+
+  
+
+    def __str__(self):
+        return self.country
+
+
+
+class Match(models.Model):
+   
     title = models.CharField(max_length=64)
+    stadium = models.CharField(max_length=64,default="")
+    number_of_tickets=models.IntegerField()
+    team1 = models.ForeignKey(
+        Team,related_name='team1', on_delete=models.CASCADE, null=True, blank=True
+    )
+    team2 = models.ForeignKey(
+        Team,related_name='team2', on_delete=models.CASCADE, null=True, blank=True
+    )
+    votes_team1 = models.IntegerField(default=0)
+    votes_team2 = models.IntegerField(default=0)
+
 
     created_date = models.DateTimeField(auto_now_add = True)
     updated_date = models.DateTimeField(auto_now = True)
-    owner = models.ForeignKey(
-        get_user_model(), on_delete=models.CASCADE, null=True, blank=True
-    )
+    
+    description = models.TextField(default="", null=True, blank=True)
+   
+
+   
+
+    def __str__(self):
+        return self.title
+
+
+
+class Ticket(models.Model):
+    title = models.CharField(max_length=64)
+    owner = models.ForeignKey( get_user_model(), on_delete=models.CASCADE, null=True, blank=True )
     description = models.TextField(default="", null=True, blank=True)
     price= models.FloatField( default=None)
-    # category = models.c
-   
+    match = models.ForeignKey(
+        Match, on_delete=models.CASCADE, null=True, blank=True
+    )
+
+    created_date = models.DateTimeField(auto_now_add = True)
+    updated_date = models.DateTimeField(auto_now = True)
+
+    def update_ticket_number(self):
+        match = self.match
+        match.number_of_tickets +=  1
+        match.save()
+       
 
     def __str__(self):
         return self.title
