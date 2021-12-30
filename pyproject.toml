@@ -8,10 +8,12 @@ authors = ["tradalhariri <trad.alhariri@gmail.com>"]
 python = "^3.9"
 Django = "^4.0"
 djangorestframework = "^3.13.1"
+django-cors-headers = "^3.10.1"
 
 [tool.poetry.dev-dependencies]
 black = "^21.12b0"
 flake8 = "^4.0.1"
+autopep8 = "^1.6.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
