@@ -7,7 +7,7 @@ from .models import Ticket,Team,Match
 class TicketAdmin(admin.ModelAdmin):
 
     list_display = [
-        "title",
+        "match",
         "created_date",
         "updated_date",
         "price",

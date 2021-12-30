@@ -137,13 +137,22 @@ AUTH_USER_MODEL = "accounts.CustomUser"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+# REST_FRAMEWORK = {
+#     'DEFAULT_PERMISSION_CLASSES': [
+#         'rest_framework.permissions.IsAdminUser',
+#     ]
+# }
+
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAdminUser',
-    ]
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+        "rest_framework.authentication.SessionAuthentication",
+        "rest_framework.authentication.BasicAuthentication",
+    ],
 }
-
-
 # new
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',

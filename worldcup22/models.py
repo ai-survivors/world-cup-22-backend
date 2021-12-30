@@ -19,7 +19,7 @@ class Match(models.Model):
    
     title = models.CharField(max_length=64)
     stadium = models.CharField(max_length=64,default="")
-    number_of_tickets=models.IntegerField(default=0)
+    number_of_tickets=models.IntegerField(default=40000)
     team1 = models.ForeignKey(
         Team,related_name='team1', on_delete=models.CASCADE, null=True, blank=True
     )
@@ -36,15 +36,12 @@ class Match(models.Model):
     description = models.TextField(default="", null=True, blank=True)
    
 
-   
-
     def __str__(self):
         return self.title
 
 
 
 class Ticket(models.Model):
-    title = models.CharField(max_length=64)
     owner = models.ForeignKey( get_user_model(), on_delete=models.CASCADE, null=True, blank=True )
     description = models.TextField(default="", null=True, blank=True)
     price= models.FloatField( default=None)
@@ -58,8 +55,8 @@ class Ticket(models.Model):
     
     def save(self, *args, **kwargs):
         super(Ticket, self).save(*args, **kwargs)
-        self.match.number_of_tickets = F('number_of_tickets')+1
+        self.match.number_of_tickets = F('number_of_tickets')-1
         self.match.save()
 
     def __str__(self):
-        return self.title
+        return self.match.title
