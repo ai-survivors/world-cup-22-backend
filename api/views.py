@@ -1,5 +1,5 @@
-from worldcup22.models import Ticket,Match,Team
-from .serializers import TicketSerializer,UserSerializer,MatchSerializer,TeamSerializer,UserCreateSerializer
+from worldcup22.models import Ticket,Match,Team,Vote
+from .serializers import TicketSerializer,UserSerializer,MatchSerializer,TeamSerializer,UserCreateSerializer,VoteSerializer
 from django.contrib.auth import get_user_model
 from .permissions import IsOwnerOrReadOnly
 from rest_framework.response import Response
@@ -75,6 +75,12 @@ class MatchViewSet(viewsets.ModelViewSet): # new
     # permission_classes = (IsOwnerOrReadOnly,)
     queryset = Match.objects.all()
     serializer_class = MatchSerializer
+
+class VoteViewSet(viewsets.ModelViewSet): # new
+    # permission_classes = (IsOwnerOrReadOnly,)
+    queryset = Vote.objects.all()
+    serializer_class = VoteSerializer
+
 
 class TeamViewSet(viewsets.ModelViewSet): # new
     # permission_classes = (IsOwnerOrReadOnly,)

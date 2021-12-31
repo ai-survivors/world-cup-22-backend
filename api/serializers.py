@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from worldcup22.models import Ticket,Match,Team
+from worldcup22.models import Ticket,Match,Team,Vote
 from django.contrib.auth import get_user_model 
 
 from rest_framework.permissions import IsAuthenticated
@@ -57,22 +57,53 @@ class UserCreateSerializer(serializers.ModelSerializer):
 
 
 class TicketSerializer(serializers.ModelSerializer):
+
     class Meta:
         model = Ticket
         fields = '__all__'
-        # fields = ('id','title','description','created_date', 'updated_date', 'price')
+
+    def to_representation(self, instance):
+        rep = super(TicketSerializer, self).to_representation(instance)
+        rep['match'] = instance.match.title
+        return rep
+
 
 class MatchSerializer(serializers.ModelSerializer):
     class Meta:
         model = Match
         fields = '__all__'
-        # fields = ('id','title','description','created_date', 'updated_date', 'price')
+
+    def to_representation(self, instance):
+        rep1 = super(MatchSerializer, self).to_representation(instance)
+        rep1['team1'] = instance.team1.flag
+        rep1['team2'] = instance.team2.flag
+        
+
+        return rep1
+
+   
 
 class TeamSerializer(serializers.ModelSerializer):
     class Meta:
         model = Team
         fields = '__all__'
-        # fields = ('id','title','description','created_date', 'updated_date', 'price')
+
+
+
+class VoteSerializer(serializers.ModelSerializer): 
+    class Meta:
+        model = Vote
+        fields ='__all__'
+    def to_representation(self, instance):
+
+        rep1 = super(VoteSerializer, self).to_representation(instance)
+        rep1['owner'] = instance.owner.username
+        rep1['match'] = instance.match.title
+        rep1['team'] = instance.team.country
+
+        
+
+        return rep1
 
 
 

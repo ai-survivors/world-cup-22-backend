@@ -14,7 +14,6 @@ class Team(models.Model):
         return self.country
 
 
-
 class Match(models.Model):
    
     title = models.CharField(max_length=64)
@@ -38,8 +37,7 @@ class Match(models.Model):
 
     def __str__(self):
         return self.title
-
-
+    
 
 class Ticket(models.Model):
     owner = models.ForeignKey( get_user_model(), on_delete=models.CASCADE, null=True, blank=True )
@@ -60,3 +58,27 @@ class Ticket(models.Model):
 
     def __str__(self):
         return self.match.title
+
+class Vote(models.Model):
+    owner = models.ForeignKey( get_user_model(), on_delete=models.CASCADE, null=True, blank=True )
+    match = models.ForeignKey(
+        Match, on_delete=models.CASCADE, null=True, blank=True
+    )
+    team = models.ForeignKey(
+        Team, on_delete=models.CASCADE, null=True, blank=True
+    )
+
+    
+    def save(self, *args, **kwargs):
+        super(Vote  , self).save(*args, **kwargs)
+
+        if self.team.country==self.match.team1.country:
+          self.match.votes_team1 = F('votes_team1')+1
+        else:
+
+              self.match.votes_team2 = F('votes_team2')+1
+
+        self.match.save()
+
+    def __str__(self):
+        return self.team.country
