@@ -6,17 +6,19 @@
 # path('tickets/', TicketAPIView.as_view()),
 # path('tickets/<int:pk>', TicketDetailAPIView.as_view()),
 # ]
-from django.urls import path
+from django.urls import path,include
 from rest_framework.routers import SimpleRouter
-from .views import UserViewSet, TicketViewSet,MatchViewSet,TeamViewSet,RegisterApiViewSet
+from .views import UserViewSet, TicketViewSet,MatchViewSet,TeamViewSet,registration
 
 router = SimpleRouter()
 router.register('users', UserViewSet, basename='users')
 
-router.register('register', RegisterApiViewSet, basename='register')
+# router.register('register', RegisterApiViewSet, basename='register')
 
 
-
+urlpatterns = [
+ path('register/', registration, name='register')
+]
 
 # path('register/', RegisterApi.as_view()),
 router.register('tickets', TicketViewSet, basename='tickets')
@@ -24,4 +26,4 @@ router.register('matches', MatchViewSet, basename='matches')
 router.register('teams', TeamViewSet, basename='teams')
 
 
-urlpatterns = router.urls
+urlpatterns += router.urls
