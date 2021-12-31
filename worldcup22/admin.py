@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Ticket,Team,Match
+from .models import Ticket,Team,Match,Vote
 
 
 
@@ -34,3 +34,14 @@ class MatchAdmin(admin.ModelAdmin):
        'team2'
         
     ]
+@admin.register(Vote)
+class VoteAdmin(admin.ModelAdmin):
+
+   
+    list_display = [
+        'owner',
+       'match',
+       'team'
+        
+    ]
+    
