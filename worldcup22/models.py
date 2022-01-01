@@ -28,10 +28,8 @@ class Match(models.Model):
     votes_team1 = models.IntegerField(default=0)
     votes_team2 = models.IntegerField(default=0)
 
-
-    created_date = models.DateTimeField(auto_now_add = True)
-    updated_date = models.DateTimeField(auto_now = True)
-    
+    time =models.CharField(max_length=64)
+    match_date=models.CharField(max_length=64)
     description = models.TextField(default="", null=True, blank=True)
    
 
