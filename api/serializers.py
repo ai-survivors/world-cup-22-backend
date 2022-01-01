@@ -75,8 +75,8 @@ class MatchSerializer(serializers.ModelSerializer):
 
     def to_representation(self, instance):
         rep1 = super(MatchSerializer, self).to_representation(instance)
-        rep1['team1'] = instance.team1.country
-        rep1['team2'] = instance.team2.country
+        rep1['team1'] = {"country":instance.team1.country,"flag":instance.team1.flag}
+        rep1['team2'] = {"country":instance.team2.country,"flag":instance.team2.flag}
         
 
         return rep1
