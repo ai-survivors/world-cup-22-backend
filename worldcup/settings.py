@@ -78,7 +78,7 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
 
     'django.middleware.common.CommonMiddleware',
-    # 'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -186,6 +186,6 @@ REST_FRAMEWORK = {
 #     'http://localhost:3000',
 #     'http://localhost:8000',
 # )
-CSRF_TRUSTED_ORIGINS = ['fifa-qatar-2022.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://fifa-qatar-2022.herokuapp.com/']
 CORS_ORIGIN_WHITELIST = tuple(env.list("ALLOWED_ORIGINS"))
 CORS_ALLOW_ALL_ORIGINS = env.bool("ALLOW_ALL_ORIGINS")
