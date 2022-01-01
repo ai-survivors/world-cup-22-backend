@@ -6,7 +6,7 @@ authors = ["tradalhariri <trad.alhariri@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-Django = "^4.0"
+Django = "3.1.7"
 djangorestframework = "^3.13.1"
 django-cors-headers = "^3.10.1"
 Pillow = "^8.4.0"
