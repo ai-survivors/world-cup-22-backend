@@ -54,16 +54,16 @@ ALLOWED_HOSTS = tuple(env.list("ALLOWED_HOSTS"))
 
 INSTALLED_APPS = [
     "whitenoise.runserver_nostatic",
-    "django.contrib.admin",
-    "django.contrib.auth",
-    "django.contrib.contenttypes",
-    "django.contrib.sessions",
-    "django.contrib.messages",
-    "django.contrib.staticfiles",
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
 
     # 3rd party
-    "rest_framework",
-    "corsheaders",
+    'rest_framework',  # new
+    'corsheaders',
 
     # Local
     "worldcup22",
@@ -72,28 +72,17 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-   "django.middleware.security.SecurityMiddleware",
-    "corsheaders.middleware.CorsMiddleware",
-    "whitenoise.middleware.WhiteNoiseMiddleware",
-    "django.contrib.sessions.middleware.SessionMiddleware",
-    "django.middleware.common.CommonMiddleware",
-    "django.middleware.csrf.CsrfViewMiddleware",
-    "django.contrib.auth.middleware.AuthenticationMiddleware",
-    "django.contrib.messages.middleware.MessageMiddleware",
-    "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    'corsheaders.middleware.CorsMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",  # new
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
 
-
-#     'corsheaders.middleware.CorsMiddleware',
-#     "whitenoise.middleware.WhiteNoiseMiddleware",  # new
-#     'django.middleware.security.SecurityMiddleware',
-#     'django.contrib.sessions.middleware.SessionMiddleware',
-
-#     'django.middleware.common.CommonMiddleware',
-#     'django.middleware.csrf.CsrfViewMiddleware',
-#     'django.contrib.auth.middleware.AuthenticationMiddleware',
-#     'django.contrib.messages.middleware.MessageMiddleware',
-#     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    ]
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
 
 ROOT_URLCONF = 'worldcup.urls'
 
@@ -173,8 +162,7 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 
 AUTH_USER_MODEL = "accounts.CustomUser"
 
-# DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # REST_FRAMEWORK = {
@@ -183,23 +171,11 @@ DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 #     ]
 # }
 
-# REST_FRAMEWORK = {
-#     'DEFAULT_PERMISSION_CLASSES': [
-#         'rest_framework.permissions.IsAuthenticated',
-#     ],
-#      "DEFAULT_AUTHENTICATION_CLASSES": [
-#         "rest_framework_simplejwt.authentication.JWTAuthentication",
-#         "rest_framework.authentication.SessionAuthentication",
-#         "rest_framework.authentication.BasicAuthentication",
-#     ],
-# }
-
-
 REST_FRAMEWORK = {
-    "DEFAULT_PERMISSION_CLASSES": [
-        "rest_framework.permissions.IsAuthenticated",
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
     ],
-    "DEFAULT_AUTHENTICATION_CLASSES": [
+     "DEFAULT_AUTHENTICATION_CLASSES": [
         "rest_framework_simplejwt.authentication.JWTAuthentication",
         "rest_framework.authentication.SessionAuthentication",
         "rest_framework.authentication.BasicAuthentication",
