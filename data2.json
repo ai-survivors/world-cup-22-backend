@@ -1,1100 +1,163 @@
-{
-"id": 1,
-"type": "group A",
-"home_team_id": 1,
-"away_team_id": 2,
-"home_team": "Russia",
-"home_flag":
-"away_team": "Saudi Arabia",
-"home_score": "5",
-"away_score": "0",
+[{
+    "title":"A busy year that will end in style",
+    "img":"https://cloudinary.fifa.com/m/2b3fcf351f52d512/original/ytcsq5rifcx0q4z7h6me-jpg.jpg?tx=c_fill,ar_1.78,g_auto,q_auto:best,w_1400",
+    "link":"https://www.fifa.com/news/a-busy-year-that-will-end-in-style",
+    "date":"Saturday, 1 January 2022,"
 
 
-"date": "2018-06-14T15:00:00+00:00",
-}
-{
-"id": 2,
-"type": "group A",
-"home_team_id": 3,
-"away_team_id": 4,
-"home_team": "Egypt",
-"away_team": "Uruguay",
-"home_score": "0",
-"away_score": "1",
-"home_scorers": null,
-"away_scorers": "Giménez 89' ",
-"date": "2018-06-15T12:00:00+00:00",
-"stadium_id": 12,
-" ": [
-3,
-6,
-14
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 1
-},
-{
-"id": 17,
-"type": "group A",
-"home_team_id": 1,
-"away_team_id": 3,
-"home_team": "Russia",
-"away_team": "Egypt",
-"home_score": "3",
-"away_score": "1",
-"home_scorers": "A. Dzyuba 62' D. Cheryshev 59' Ahmed Fathy 47' ",
-"away_scorers": "Mohamed Salah 73' ",
-"date": "2018-06-19T18:00:00+00:00",
-"stadium_id": 3,
-" ": [
-3,
-6,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 2
-},
-{
-"id": 18,
-"type": "group A",
-"home_team_id": 4,
-"away_team_id": 2,
-"home_team": "Uruguay",
-"away_team": "Saudi Arabia",
-"home_score": "1",
-"away_score": "0",
-"home_scorers": "Luis Suárez 23' ",
-"away_scorers": null,
-"date": "2018-06-20T15:00:00+00:00",
-"stadium_id": 10,
-" ": [
-3,
-6,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 2
-},
-{
-"id": 33,
-"type": "group A",
-"home_team_id": 4,
-"away_team_id": 1,
-"home_team": "Uruguay",
-"away_team": "Russia",
-"home_score": "3",
-"away_score": "0",
-"home_scorers": "E. Cavani 90' D. Cheryshev 23' Luis Suárez 10' ",
-"away_scorers": null,
-"date": "2018-06-25T14:00:00+00:00",
-"stadium_id": 7,
-" ": [
-4,
-6,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 3
-},
-{
-"id": 34,
-"type": "group A",
-"home_team_id": 2,
-"away_team_id": 3,
-"home_team": "Saudi Arabia",
-"away_team": "Egypt",
-"home_score": "2",
-"away_score": "1",
-"home_scorers": "Salem Al Dawsari 90'+5' Salman Al Faraj 45'+6' ",
-"away_scorers": "Mohamed Salah 22' ",
-"date": "2018-06-25T14:00:00+00:00",
-"stadium_id": 8,
-" ": [
-5,
-6,
-14
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 3
-}
-]
-},
-"b": {
-"name": "Group B",
-"winner": null,
-"runnerup": null,
-"matches": [
-{
-"id": 3,
-"type": "group",
-"home_team_id": 5,
-"away_team_id": 6,
-"home_team": "Portugal",
-"away_team": "Spain",
-"home_score": "3",
-"away_score": "3",
-"home_scorers": "Cristiano Ronaldo 88' Cristiano Ronaldo 44' Cristiano Ronaldo 4' ",
-"away_scorers": "Nacho 58' Diego Costa 55' Diego Costa 24' ",
-"date": "2018-06-15T18:00:00+00:00",
-"stadium_id": 11,
-" ": [
-3,
-7,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 1
-},
-{
-"id": 4,
-"type": "group",
-"home_team_id": 7,
-"away_team_id": 8,
-"home_team": "Morocco",
-"away_team": "Iran",
-"home_score": "0",
-"away_score": "1",
-"home_scorers": null,
-"away_scorers": "A. Bouhaddouz 90'+5' ",
-"date": "2018-06-15T15:00:00+00:00",
-"stadium_id": 3,
-" ": [
-4,
-6,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 1
-},
-{
-"id": 19,
-"type": "group",
-"home_team_id": 5,
-"away_team_id": 7,
-"home_team": "Portugal",
-"away_team": "Morocco",
-"home_score": "1",
-"away_score": "0",
-"home_scorers": "Cristiano Ronaldo 4' ",
-"away_scorers": null,
-"date": "2018-06-20T12:00:00+00:00",
-"stadium_id": 1,
-" ": [
-3,
-6,
-14
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 2
-},
-{
-"id": 20,
-"type": "group",
-"home_team_id": 8,
-"away_team_id": 6,
-"home_team": "Iran",
-"away_team": "Spain",
-"home_score": "0",
-"away_score": "1",
-"home_scorers": null,
-"away_scorers": "Diego Costa 54' ",
-"date": "2018-06-20T18:00:00+00:00",
-"stadium_id": 5,
-" ": [
-4,
-7,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 2
-},
-{
-"id": 35,
-"type": "group",
-"home_team_id": 8,
-"away_team_id": 5,
-"home_team": "Iran",
-"away_team": "Portugal",
-"home_score": "1",
-"away_score": "1",
-"home_scorers": "K. Ansarifard 90'+3' ",
-"away_scorers": "Ricardo Quaresma 45' ",
-"date": "2018-06-25T18:00:00+00:00",
-"stadium_id": 9,
-" ": [
-3,
-6,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 3
-},
-{
-"id": 36,
-"type": "group",
-"home_team_id": 6,
-"away_team_id": 7,
-"home_team": "Spain",
-"away_team": "Morocco",
-"home_score": "2",
-"away_score": "2",
-"home_scorers": "Iago Aspas 90'+1' Isco 19' ",
-"away_scorers": "Y. En-Nesyri 81' K. Boutaïb 14' ",
-"date": "2018-06-25T18:00:00+00:00",
-"stadium_id": 4,
-" ": [
-3,
-7,
-14
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 3
-}
-]
-},
-"c": {
-"name": "Group C",
-"winner": null,
-"runnerup": null,
-"matches": [
-{
-"id": 5,
-"type": "group",
-"home_team_id": 9,
-"away_team_id": 10,
-"home_team": "France",
-"away_team": "Australia",
-"home_score": "2",
-"away_score": "1",
-"home_scorers": "A. Behich 80' A. Griezmann 58' ",
-"away_scorers": "Mile Jedinak 62' ",
-"date": "2018-06-16T10:00:00+00:00",
-"stadium_id": 5,
-" ": [
-3,
-6,
-14
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 1
-},
-{
-"id": 6,
-"type": "group",
-"home_team_id": 11,
-"away_team_id": 12,
-"home_team": "Peru",
-"away_team": "Denmark",
-"home_score": "0",
-"away_score": "1",
-"home_scorers": null,
-"away_scorers": "Y. Poulsen 59' ",
-"date": "2018-06-16T16:00:00+00:00",
-"stadium_id": 9,
-" ": [
-3,
-6,
-14
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 1
-},
-{
-"id": 21,
-"type": "group",
-"home_team_id": 9,
-"away_team_id": 11,
-"home_team": "France",
-"away_team": "Peru",
-"home_score": "1",
-"away_score": "0",
-"home_scorers": "K. Mbappé 34' ",
-"away_scorers": null,
-"date": "2018-06-21T15:00:00+00:00",
-"stadium_id": 12,
-" ": [
-4,
-6,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 2
-},
-{
-"id": 22,
-"type": "group",
-"home_team_id": 12,
-"away_team_id": 10,
-"home_team": "Denmark",
-"away_team": "Australia",
-"home_score": "1",
-"away_score": "1",
-"home_scorers": "C. Eriksen 7' ",
-"away_scorers": "Mile Jedinak 38' ",
-"date": "2018-06-21T12:00:00+00:00",
-"stadium_id": 7,
-" ": [
-4,
-6,
-14
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 2
-},
-{
-"id": 37,
-"type": "group",
-"home_team_id": 12,
-"away_team_id": 9,
-"home_team": "Denmark",
-"away_team": "France",
-"home_score": "0",
-"away_score": "0",
-"home_scorers": null,
-"away_scorers": null,
-"date": "2018-06-26T14:00:00+00:00",
-"stadium_id": 1,
-" ": [
-4,
-6,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 3
-},
-{
-"id": 38,
-"type": "group",
-"home_team_id": 10,
-"away_team_id": 11,
-"home_team": "Australia",
-"away_team": "Peru",
-"home_score": "0",
-"away_score": "2",
-"home_scorers": null,
-"away_scorers": "Paolo Guerrero 50' A. Carrillo 18' ",
-"date": "2018-06-26T14:00:00+00:00",
-"stadium_id": 11,
-" ": [
-5,
-6,
-14
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 3
-}
-]
-},
-"d": {
-"name": "Group D",
-"winner": null,
-"runnerup": null,
-"matches": [
-{
-"id": 7,
-"type": "group",
-"home_team_id": 13,
-"away_team_id": 14,
-"home_team": "Argentina",
-"away_team": "Iceland",
-"home_score": "1",
-"away_score": "1",
-"home_scorers": "S. Agüero 19' ",
-"away_scorers": "Alfred Finnbogason 23' ",
-"date": "2018-06-16T13:00:00+00:00",
-"stadium_id": 2,
-" ": [
-4,
-6,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 1
-},
-{
-"id": 8,
-"type": "group",
-"home_team_id": 15,
-"away_team_id": 16,
-"home_team": "Croatia",
-"away_team": "Nigeria",
-"home_score": "2",
-"away_score": "0",
-"home_scorers": "L. Modric 71' O. Etebo 32' ",
-"away_scorers": null,
-"date": "2018-06-16T19:00:00+00:00",
-"stadium_id": 4,
-" ": [
-4,
-6,
-14
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 1
-},
-{
-"id": 23,
-"type": "group",
-"home_team_id": 13,
-"away_team_id": 15,
-"home_team": "Argentina",
-"away_team": "Croatia",
-"home_score": "0",
-"away_score": "3",
-"home_scorers": null,
-"away_scorers": "I. Rakitic 90'+1' L. Modric 80' A. Rebic 53' ",
-"date": "2018-06-21T18:00:00+00:00",
-"stadium_id": 6,
-" ": [
-3,
-6,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 2
-},
-{
-"id": 24,
-"type": "group",
-"home_team_id": 16,
-"away_team_id": 14,
-"home_team": "Nigeria",
-"away_team": "Iceland",
-"home_score": "2",
-"away_score": "0",
-"home_scorers": "A. Musa 75' A. Musa 49' ",
-"away_scorers": null,
-"date": "2018-06-22T15:00:00+00:00",
-"stadium_id": 8,
-" ": [
-3,
-6,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 2
-},
-{
-"id": 39,
-"type": "group",
-"home_team_id": 16,
-"away_team_id": 13,
-"home_team": "Nigeria",
-"away_team": "Argentina",
-"home_score": "1",
-"away_score": "2",
-"home_scorers": "V. Moses 51' ",
-"away_scorers": "M. Rojo 86' L. Messi 14' ",
-"date": "2018-06-26T18:00:00+00:00",
-"stadium_id": 3,
-" ": [
-3,
-6,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 3
-},
-{
-"id": 40,
-"type": "group",
-"home_team_id": 14,
-"away_team_id": 15,
-"home_team": "Iceland",
-"away_team": "Croatia",
-"home_score": "1",
-"away_score": "2",
-"home_scorers": "Gylfi Sigurdsson 76' ",
-"away_scorers": "I. Perisic 90' M. Badelj 53' ",
-"date": "2018-06-26T18:00:00+00:00",
-"stadium_id": 10,
-" ": [
-3,
-6,
-14
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 3
-}
-]
-},
-"e": {
-"name": "Group E",
-"winner": null,
-"runnerup": null,
-"matches": [
-{
-"id": 9,
-"type": "group",
-"home_team_id": 17,
-"away_team_id": 18,
-"home_team": "Brazil",
-"away_team": "Switzerland",
-"home_score": "1",
-"away_score": "1",
-"home_scorers": "Coutinho 20' ",
-"away_scorers": "S. Zuber 50' ",
-"date": "2018-06-17T18:00:00+00:00",
-"stadium_id": 10,
-" ": [
-4,
-6,
-14
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 1
-},
-{
-"id": 10,
-"type": "group",
-"home_team_id": 19,
-"away_team_id": 20,
-"home_team": "Costa Rica",
-"away_team": "Serbia",
-"home_score": "0",
-"away_score": "1",
-"home_scorers": null,
-"away_scorers": "A. Kolarov 56' ",
-"date": "2018-06-17T12:00:00+00:00",
-"stadium_id": 7,
-" ": [
-4,
-6,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 1
-},
-{
-"id": 25,
-"type": "group",
-"home_team_id": 17,
-"away_team_id": 19,
-"home_team": "Brazil",
-"away_team": "Costa Rica",
-"home_score": "2",
-"away_score": "0",
-"home_scorers": "Neymar 90'+7' Coutinho 90'+1' ",
-"away_scorers": null,
-"date": "2018-06-22T12:00:00+00:00",
-"stadium_id": 3,
-" ": [
-4,
-6,
-14
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 2
-},
-{
-"id": 26,
-"type": "group",
-"home_team_id": 20,
-"away_team_id": 18,
-"home_team": "Serbia",
-"away_team": "Switzerland",
-"home_score": "1",
-"away_score": "2",
-"home_scorers": "A. Mitrovic 5' ",
-"away_scorers": "X. Shaqiri 90' G. Xhaka 52' ",
-"date": "2018-06-22T18:00:00+00:00",
-"stadium_id": 4,
-" ": [
-3,
-6,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 2
-},
-{
-"id": 41,
-"type": "group",
-"home_team_id": 20,
-"away_team_id": 17,
-"home_team": "Serbia",
-"away_team": "Brazil",
-"home_score": "0",
-"away_score": "2",
-"home_scorers": null,
-"away_scorers": "Thiago Silva 68' Paulinho 36' ",
-"date": "2018-06-27T18:00:00+00:00",
-"stadium_id": 2,
-" ": [
-4,
-6,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 3
-},
-{
-"id": 42,
-"type": "group",
-"home_team_id": 18,
-"away_team_id": 19,
-"home_team": "Switzerland",
-"away_team": "Costa Rica",
-"home_score": "2",
-"away_score": "2",
-"home_scorers": "J. Drmic 88' B. Dzemaili 31' ",
-"away_scorers": "Y. Sommer 90'+3' K. Waston 56' ",
-"date": "2018-06-27T18:00:00+00:00",
-"stadium_id": 6,
-" ": [
-5,
-6,
-14
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 3
-}
-]
-},
-"f": {
-"name": "Group F",
-"winner": null,
-"runnerup": null,
-"matches": [
-{
-"id": 11,
-"type": "group",
-"home_team_id": 21,
-"away_team_id": 22,
-"home_team": "Germany",
-"away_team": "Mexico",
-"home_score": "0",
-"away_score": "1",
-"home_scorers": null,
-"away_scorers": "H. Lozano 35' ",
-"date": "2018-06-17T15:00:00+00:00",
-"stadium_id": 1,
-" ": [
-3,
-6,
-14
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 1
-},
-{
-"id": 12,
-"type": "group",
-"home_team_id": 23,
-"away_team_id": 24,
-"home_team": "Sweden",
-"away_team": "South Korea",
-"home_score": "1",
-"away_score": "0",
-"home_scorers": "A. Granqvist 65' ",
-"away_scorers": null,
-"date": "2018-06-18T12:00:00+00:00",
-"stadium_id": 6,
-" ": [
-4,
-6,
-14
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 1
-},
-{
-"id": 27,
-"type": "group",
-"home_team_id": 21,
-"away_team_id": 23,
-"home_team": "Germany",
-"away_team": "Sweden",
-"home_score": "2",
-"away_score": "1",
-"home_scorers": "T. Kroos 90'+5' M. Reus 48' ",
-"away_scorers": "O. Toivonen 32' ",
-"date": "2018-06-23T18:00:00+00:00",
-"stadium_id": 11,
-" ": [
-4,
-6,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 2
-},
-{
-"id": 28,
-"type": "group",
-"home_team_id": 24,
-"away_team_id": 22,
-"home_team": "South Korea",
-"away_team": "Mexico",
-"home_score": "1",
-"away_score": "2",
-"home_scorers": "Son Heung-Min 90'+3' ",
-"away_scorers": "Chicharito 66' C. Vela 26' ",
-"date": "2018-06-23T15:00:00+00:00",
-"stadium_id": 10,
-" ": [
-4,
-6,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 2
-},
-{
-"id": 43,
-"type": "group",
-"home_team_id": 24,
-"away_team_id": 21,
-"home_team": "South Korea",
-"away_team": "Germany",
-"home_score": "2",
-"away_score": "0",
-"home_scorers": "Son Heung-Min 90'+6' Kim Young-Gwon 90'+2' ",
-"away_scorers": null,
-"date": "2018-06-27T14:00:00+00:00",
-"stadium_id": 5,
-" ": [
-3,
-6,
-14
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 3
-},
-{
-"id": 44,
-"type": "group",
-"home_team_id": 22,
-"away_team_id": 23,
-"home_team": "Mexico",
-"away_team": "Sweden",
-"home_score": "0",
-"away_score": "3",
-"home_scorers": null,
-"away_scorers": "E. Álvarez 74' A. Granqvist 62' L. Augustinsson 50' ",
-"date": "2018-06-27T14:00:00+00:00",
-"stadium_id": 12,
-" ": [
-3,
-6,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 3
-}
-]
-},
-"g": {
-"name": "Group G",
-"winner": null,
-"runnerup": null,
-"matches": [
-{
-"id": 13,
-"type": "group",
-"home_team_id": 25,
-"away_team_id": 26,
-"home_team": "Belgium",
-"away_team": "Panama",
-"home_score": "3",
-"away_score": "0",
-"home_scorers": "R. Lukaku 75' R. Lukaku 69' D. Mertens 47' ",
-"away_scorers": null,
-"date": "2018-06-18T15:00:00+00:00",
-"stadium_id": 11,
-" ": [
-3,
-6,
-14
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 1
-},
-{
-"id": 14,
-"type": "group",
-"home_team_id": 27,
-"away_team_id": 28,
-"home_team": "Tunisia",
-"away_team": "England",
-"home_score": "1",
-"away_score": "2",
-"home_scorers": "F. Sassi 35' ",
-"away_scorers": "H. Kane 90'+1' H. Kane 11' ",
-"date": "2018-06-18T18:00:00+00:00",
-"stadium_id": 8,
-" ": [
-3,
-6,
-14
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 1
-},
-{
-"id": 29,
-"type": "group",
-"home_team_id": 25,
-"away_team_id": 27,
-"home_team": "Belgium",
-"away_team": "Tunisia",
-"home_score": "5",
-"away_score": "2",
-"home_scorers": "Michy 90' E. Hazard 51' R. Lukaku 45'+3' R. Lukaku 16' E. Hazard 6' ",
-"away_scorers": "W. Khazri 90'+3' D. Bronn 18' ",
-"date": "2018-06-23T12:00:00+00:00",
-"stadium_id": 2,
-" ": [
-3,
-6,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 2
-},
-{
-"id": 30,
-"type": "group",
-"home_team_id": 28,
-"away_team_id": 26,
-"home_team": "England",
-"away_team": "Panama",
-"home_score": "6",
-"away_score": "1",
-"home_scorers": "H. Kane 62' H. Kane 45'+1' J. Stones 40' J. Lingard 36' H. Kane 22' J. Stones 8' ",
-"away_scorers": "F. Baloy 78' ",
-"date": "2018-06-24T12:00:00+00:00",
-"stadium_id": 6,
-" ": [
-3,
-6,
-14
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 2
-},
-{
-"id": 45,
-"type": "group",
-"home_team_id": 28,
-"away_team_id": 25,
-"home_team": "England",
-"away_team": "Belgium",
-"home_score": "0",
-"away_score": "1",
-"home_scorers": null,
-"away_scorers": "A. Januzaj 51' ",
-"date": "2018-06-28T18:00:00+00:00",
-"stadium_id": 4,
-" ": [
-4,
-6,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 3
-},
-{
-"id": 46,
-"type": "group",
-"home_team_id": 26,
-"away_team_id": 27,
-"home_team": "Panama",
-"away_team": "Tunisia",
-"home_score": "1",
-"away_score": "2",
-"home_scorers": "Y. Meriah 33' (OG) ",
-"away_scorers": "W. Khazri 66' Fakhreddine Ben Yous 51' ",
-"date": "2018-06-28T18:00:00+00:00",
-"stadium_id": 9,
-" ": [
-5,
-6,
-14
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 3
-}
-]
-},
-"h": {
-"name": "Group H",
-"winner": null,
-"runnerup": null,
-"matches": [
-{
-"id": 15,
-"type": "group",
-"home_team_id": 29,
-"away_team_id": 30,
-"home_team": "Poland",
-"away_team": "Senegal",
-"home_score": "1",
-"away_score": "2",
-"home_scorers": "G. Krychowiak 86' ",
-"away_scorers": "M. Niang 60' Thiago Cionek 37' ",
-"date": "2018-06-19T15:00:00+00:00",
-"stadium_id": 2,
-" ": [
-4,
-6,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 1
-},
-{
-"id": 16,
-"type": "group",
-"home_team_id": 31,
-"away_team_id": 32,
-"home_team": "Colombia",
-"away_team": "Japan",
-"home_score": "1",
-"away_score": "2",
-"home_scorers": "J. Quintero 39' ",
-"away_scorers": "Y. Osako 73' S. Kagawa 6' ",
-"date": "2018-06-19T12:00:00+00:00",
-"stadium_id": 9,
-" ": [
-3,
-6,
-14
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 1
-},
-{
-"id": 31,
-"type": "group",
-"home_team_id": 29,
-"away_team_id": 31,
-"home_team": "Poland",
-"away_team": "Colombia",
-"home_score": "0",
-"away_score": "3",
-"home_scorers": null,
-"away_scorers": "J. Cuadrado 75' Falcao 70' Y. Mina 40' ",
-"date": "2018-06-24T18:00:00+00:00",
-"stadium_id": 5,
-" ": [
-4,
-6,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 2
-},
-{
-"id": 32,
-"type": "group",
-"home_team_id": 32,
-"away_team_id": 30,
-"home_team": "Japan",
-"away_team": "Senegal",
-"home_score": "2",
-"away_score": "2",
-"home_scorers": "K. Honda 78' T. Inui 34' ",
-"away_scorers": "M. Wagué 71' S. Mané 11' ",
-"date": "2018-06-24T15:00:00+00:00",
-"stadium_id": 12,
-" ": [
-3,
-6,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 2
-},
-{
-"id": 47,
-"type": "group",
-"home_team_id": 32,
-"away_team_id": 29,
-"home_team": "Japan",
-"away_team": "Poland",
-"home_score": "0",
-"away_score": "1",
-"home_scorers": null,
-"away_scorers": "J. Bednarek 59' ",
-"date": "2018-06-28T14:00:00+00:00",
-"stadium_id": 8,
-" ": [
-3,
-6,
-14
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 3
-},
-{
-"id": 48,
-"type": "group",
-"home_team_id": 30,
-"away_team_id": 31,
-"home_team": "Senegal",
-"away_team": "Colombia",
-"home_score": "0",
-"away_score": "1",
-"home_scorers": null,
-"away_scorers": "Y. Mina 74' ",
-"date": "2018-06-28T14:00:00+00:00",
-"stadium_id": 7,
-" ": [
-3,
-6,
-13
-],
-"time_elapsed": "Final",
-"finished": true,
-"matchday": 3
-}
-]
-}
-},
+},{
+    "title":"Belgium's three-year reign in focus",
+    "img":"https://digitalhub.fifa.com/transform/30c9d867-dbf8-43a3-8b5b-471be8949f79/den-Hazard-forward-of-Belgium-celebrates?io=transform:fill,aspectratio:16x9,width:1400&quality=100",
+    "link":"https://www.fifa.com/news/belgiums-three-year-reign-in-focus",
+    "date":"Friday, 31 December 2021"
+
+
+},{
+    "title":"FIFA statement on OFC representative at the FIFA Club World Cup UAE 2021™",
+    "img":"https://digitalhub.fifa.com/transform/a33247e7-6f7d-473b-9a1d-258fdc2e9a4a/FIFA-Club-World-Cup-UAE-2021-Draw?io=transform:fill,aspectratio:16x9,width:1400&quality=100",
+    "link":"https://www.fifa.com/tournaments/mens/clubworldcup/uae2021/media-releases/fifa-statement-on-ofc-representative-at-the-fifa-club-world-cup-uae-2021-tm",
+    "date":"Friday, 31 December 2021"
+
+
+},{
+    "title":"Legends lost in 2021",
+    "img":"https://digitalhub.fifa.com/transform/fcc63cc9-213a-4aa8-a1bb-1cefa2d0f66b/Gerd-Muller-lifts-the-FIFA-World-Cup-Trophy?io=transform:fill,aspectratio:16x9,width:1400&quality=100",
+    "link":"https://www.fifa.com/news/legends-lost-in-2021",
+    "date":"Friday, 31 December 2021"
+
+
+},{
+    "title":"2021: A World Cup appetiser and tournaments on multiple surfaces",
+    "img":"https://cloudinary.fifa.com/m/d143a8bc70d1a9d/original/Gold-medalists-of-Team-Brazil-celebrate-with-their-gold-medals.jpg?tx=c_fill,ar_1.78,x_2603,y_845,g_xy_center,q_auto:best,w_1400",
+    "link":"https://www.fifa.com/news/2021-world-cup-appetiser-and-tournaments-multiple-surfaces",
+    "date":"Thursday, 30 December 2021"
+
+
+},{
+    "title":"Meet Ajdin Hrustic, Australia’s new free-kick ace",
+    "img":"https://digitalhub.fifa.com/transform/6d69bf50-512e-4b16-aa4c-4770495250c6/Ajdin-Hrustic-of-Australia?io=transform:fill,aspectratio:1x1,width:1400&quality=100",
+    "link":"https://www.fifa.com/tournaments/mens/worldcup/qatar2022/news/meet-ajdin-hrustic-australias-new-free-kick-ace",
+    "date":"Wednesday, 29 December 2021"
+
+
+},{
+    "title":"Luis Enrique’s young guns firing Spanish dreams",
+    "img":"https://digitalhub.fifa.com/transform/101a2629-dc84-4cf7-a1cd-f23fea5fd93c/Luis-Enrique-Head-Coach-of-Spain-reacts-as-Yeremi-Pino-of-Spain-prepares-to-come-on-as-a-substitute-during-the-UEFA-Nations-League-2021-Semi-final-match-between-Italy-and-Spain-at-San-Siro-Stadium-on-October-06-2021-in-Milan-Italy-Photo-by-Marco-Bertorello-Pool-Getty-Images?io=transform:fill,aspectratio:1x1,width:1400&quality=100",
+    "link":"https://www.fifa.com/news/luis-enriques-young-guns-firing-spanish-dreams",
+    "date":"Monday, 27 December 2021"
+
+
+},{
+    "title":"Draw sets path to FIFA World Cup 2022™ for Oceania aspirants",
+    "img":"https://digitalhub.fifa.com/transform/d83d58d4-669e-4d4c-866e-46fddd13e079/FIFA-World-Cup-Qatar-2022-OFC-Preliminary-Draw?io=transform:fill,aspectratio:16x9,width:1400&quality=100",
+    "link":"https://www.fifa.com/news/draw-sets-path-to-fifa-world-cup-2022-tm-for-oceania-aspirants",
+    "date":"Tuesday, 30 November 2021"
+
+
+},{
+    "title":"How things stand in Qatar 2022 qualifying",
+    "img":"https://digitalhub.fifa.com/transform/f84f73c4-a3bf-49e0-bb3a-248341550ebc/Lionel-Messi-of-Argentina?io=transform:fill,aspectratio:1x1,width:1400&quality=100",
+    "link":"https://www.fifa.com/news/how-things-stand-in-world-cup-qualifying",
+    "date":"Tuesday, 16 November 2021,"
+
+
+},{
+    "title":"Well-knit Argentina on the fast track to success",
+    "img":"https://digitalhub.fifa.com/transform/281e3c13-ddf0-42fc-912d-704102f21bea/Players-of-Argentina-line-up-before-a-match-between-Argentina-and-Brazil?io=transform:fill,aspectratio:1x1,width:1400&quality=100",
+    "link":"https://www.fifa.com/tournaments/mens/worldcup/qatar2022/news/well-knit-argentina-on-the-fast-track-to-success",
+    "date":"Wednesday, 17 November 2021"
+
+
+},{
+    "title":"Brazil, Argentina reach Qatar as Uruguay’s hopes fade",
+    "img":"https://digitalhub.fifa.com/transform/02e23dc5-2fe9-4e66-bc17-d2d837c95e20/Lionel-Messi-of-Argentina-competes-for-the-ball-with-Eder-Militao-L-and-Vinicius-Junior?io=transform:fill,aspectratio:1x1,width:1400&quality=100",
+    "link":"https://www.fifa.com/news/brazil-argentina-reach-world-cup-as-uruguays-hopes-fade",
+    "date":"Wednesday, 17 November 2021"
+
+
+},{
+    "title":"A busy year that will end in style",
+    "img":"https://cloudinary.fifa.com/m/2b3fcf351f52d512/original/ytcsq5rifcx0q4z7h6me-jpg.jpg?tx=c_fill,ar_1.00,g_auto,q_auto:best,w_1400",
+    "link":"https://www.fifa.com/news/a-busy-year-that-will-end-in-style",
+    "date":"Saturday, 1 January 2022"
+
+
+},{
+    "title":"Canada hit the front in Concacaf",
+    "img":"https://digitalhub.fifa.com/transform/c95c6188-4eb0-4777-8e2a-462d91baca42/November-16-2021-EDMONTON-ab-Canada-Canada-players-celebrate-a-goal-against-Mexico-during-World-Cup-Qualifiers-in-E?io=transform:fill,aspectratio:1x1,width:1400&quality=100",
+    "link":"https://www.fifa.com/news/canada-hit-the-front-in-concacaf",
+    "date":"Wednesday, 17 November 2021"
+
+
+},{
+    "title":"",
+    "img":"",
+    "link":"",
+    "date":""
+
+
+},{
+    "title":"",
+    "img":"",
+    "link":"",
+    "date":""
+
+
+},{
+    "title":"",
+    "img":"",
+    "link":"",
+    "date":""
+
+
+},{
+    "title":"",
+    "img":"",
+    "link":"",
+    "date":""
+
+
+},{
+    "title":"",
+    "img":"",
+    "link":"",
+    "date":""
+
+
+},{
+    "title":"",
+    "img":"",
+    "link":"",
+    "date":""
+
+
+},{
+    "title":"",
+    "img":"",
+    "link":"",
+    "date":""
+
+
+},{
+    "title":"",
+    "img":"",
+    "link":"",
+    "date":""
+
+
+},{
+    "title":"",
+    "img":"",
+    "link":"",
+    "date":""
+
+
+},{
+    "title":"",
+    "img":"",
+    "link":"",
+    "date":""
+
+
+}]
+
