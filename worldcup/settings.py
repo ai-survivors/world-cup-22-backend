@@ -186,5 +186,6 @@ REST_FRAMEWORK = {
 #     'http://localhost:3000',
 #     'http://localhost:8000',
 # )
+CSRF_TRUSTED_ORIGINS = ['fifa-qatar-2022.herokuapp.com']
 CORS_ORIGIN_WHITELIST = tuple(env.list("ALLOWED_ORIGINS"))
 CORS_ALLOW_ALL_ORIGINS = env.bool("ALLOW_ALL_ORIGINS")
