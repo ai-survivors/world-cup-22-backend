@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Ticket,Team,Match,Vote,News
+from .models import Ticket,Team,Match,Vote,New
 
 
 
@@ -46,7 +46,7 @@ class VoteAdmin(admin.ModelAdmin):
     ]
     
 
-@admin.register(News)
+@admin.register(New)
 class NewsAdmin(admin.ModelAdmin):
 
    

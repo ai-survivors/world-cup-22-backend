@@ -81,7 +81,7 @@ class Vote(models.Model):
     def __str__(self):
         return self.team.country
 
-class News(models.Model):
+class New(models.Model):
     title = models.CharField(max_length=128)
     img=   models.TextField(default="",)
     link=  models.TextField(default="",)

@@ -1,4 +1,4 @@
-from worldcup22.models import Ticket,Match,Team,Vote,News
+from worldcup22.models import Ticket,Match,Team,Vote,New
 from .serializers import TicketSerializer,UserSerializer,MatchSerializer,TeamSerializer,UserCreateSerializer,VoteSerializer,NewsSerializer
 from django.contrib.auth import get_user_model
 from .permissions import IsOwnerOrReadOnly
@@ -104,8 +104,16 @@ class TeamViewSet(viewsets.ModelViewSet): # new
 
 class NewsViewSet(viewsets.ModelViewSet): # new
     # permission_classes = (IsOwnerOrReadOnly,)
-    queryset = News.objects.all()
+    queryset = New.objects.all()
     serializer_class = NewsSerializer
+
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data, many=isinstance(request.data,list))
+        serializer.is_valid(raise_exception=True)
+        self.perform_create(serializer)
+        headers = self.get_success_headers(serializer.data)
+        return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
+
 
 
 class UserViewSet(viewsets.ModelViewSet): 
