@@ -8,7 +8,7 @@
 # ]
 from django.urls import path,include
 from rest_framework.routers import SimpleRouter
-from .views import UserViewSet, TicketViewSet,MatchViewSet,TeamViewSet,RegistrationViewSet,VoteViewSet
+from .views import UserViewSet, TicketViewSet,MatchViewSet,TeamViewSet,RegistrationViewSet,VoteViewSet,NewsViewSet
 
 router = SimpleRouter()
 router.register('users', UserViewSet, basename='users')
@@ -26,6 +26,8 @@ router.register('matches', MatchViewSet, basename='matches')
 router.register('teams', TeamViewSet, basename='teams')
 router.register('register', RegistrationViewSet, basename='register')
 router.register('votes', VoteViewSet, basename='votes')
+router.register('news', NewsViewSet, basename='news')
+
 
 
 

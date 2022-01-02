@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Ticket,Team,Match,Vote
+from .models import Ticket,Team,Match,Vote,New
 
 
 
@@ -42,6 +42,19 @@ class VoteAdmin(admin.ModelAdmin):
         'owner',
        'match',
        'team'
+        
+    ]
+    
+
+@admin.register(New)
+class NewsAdmin(admin.ModelAdmin):
+
+   
+    list_display = [
+        'title',
+        'img',
+        'link',
+        'date'
         
     ]
     
