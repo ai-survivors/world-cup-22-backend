@@ -103,7 +103,7 @@ class TeamViewSet(viewsets.ModelViewSet): # new
 
 
 class NewsViewSet(viewsets.ModelViewSet): # new
-    # permission_classes = (IsOwnerOrReadOnly,)
+    permission_classes = (permissions.AllowAny,)
     queryset = New.objects.all()
     serializer_class = NewsSerializer
 
