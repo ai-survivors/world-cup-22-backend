@@ -37,7 +37,7 @@ class RegistrationViewSet(viewsets.ModelViewSet):
 
 
 
-class TicketViewSet(viewsets.ModelViewSet): # new
+class TicketViewSet(viewsets.ModelViewSet): 
     permission_classes = (IsOwnerOrReadOnly,)
     queryset = Ticket.objects.all()
     serializer_class = TicketSerializer
@@ -55,8 +55,7 @@ def buyticket(request):
         [request.user.email],
         fail_silently=False,
     )
-    response = redirect('google.com')
-    return HttpResponseRedirect("http://localhost:3000/TicketSubmit")
+    return HttpResponseRedirect("http://localhost:3000/Profile")
 
 
 class MatchViewSet(viewsets.ModelViewSet): # new
@@ -103,8 +102,6 @@ class NewsViewSet(viewsets.ModelViewSet): # new
         self.perform_create(serializer)
         headers = self.get_success_headers(serializer.data)
         return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
-
-
 
 class UserViewSet(viewsets.ModelViewSet): 
     queryset = get_user_model().objects.all()
