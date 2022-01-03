@@ -196,8 +196,10 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER= 'ssurvivors721@gmail.com'
 EMAIL_HOST_PASSWORD=    '1996ssurvivors721'
-         
-                 
-                   
+
+
+from datetime import timedelta
+
+SIMPLE_JWT = {'ACCESS_TOKEN_LIFETIME':timedelta(days=7)}
                 
                     

@@ -43,10 +43,13 @@ class TicketViewSet(viewsets.ModelViewSet): # new
 
 
 def buyticket(request):
+    username=request.user.username
+
+    message=f'Hello {username} thanks for your request We have checked your Vaccination Certificate and It was Correct Here is Your ticket Link'
 
     send_mail(
-        'asdasd',
-        'asdasdasdasasd',
+       'Qatar 2022 Buying ticket',
+        message,
         settings.EMAIL_HOST_USER,
         [request.user.email],
         fail_silently=False,
@@ -56,7 +59,8 @@ def buyticket(request):
 
 
 class MatchViewSet(viewsets.ModelViewSet): # new
-    # permission_classes = (IsOwnerOrReadOnly,)
+    permission_classes = (permissions.AllowAny,) 
+
     queryset = Match.objects.all()
     serializer_class = MatchSerializer
     def create(self, request, *args, **kwargs):
@@ -73,7 +77,8 @@ class VoteViewSet(viewsets.ModelViewSet): # new
 
 
 class TeamViewSet(viewsets.ModelViewSet): # new
-    # permission_classes = (IsOwnerOrReadOnly,)
+    permission_classes = (permissions.AllowAny,) 
+
     queryset = Team.objects.all()
     serializer_class = TeamSerializer
 
