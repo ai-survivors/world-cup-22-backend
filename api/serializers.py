@@ -89,8 +89,9 @@ class VoteSerializer(serializers.ModelSerializer):
 
         rep1 = super(VoteSerializer, self).to_representation(instance)
         rep1['owner'] = instance.owner.username
-        rep1['match'] = instance.match.title
+        rep1['match'] = {"matchid":instance.match.id,"title":instance.match.title,"team1":instance.match.team1.country,"team2":instance.match.team2.country}
         rep1['team'] = instance.team.country
+        
 
         
 
