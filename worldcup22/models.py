@@ -47,7 +47,7 @@ class Ticket(models.Model):
 
     created_date = models.DateTimeField(auto_now_add = True)
     updated_date = models.DateTimeField(auto_now = True)
-    purchased = models.BooleanField(default = False)
+  
     
     def save(self, *args, **kwargs):
         super(Ticket, self).save(*args, **kwargs)
@@ -65,17 +65,19 @@ class Vote(models.Model):
     team = models.ForeignKey(
         Team, on_delete=models.CASCADE, null=True, blank=True
     )
+    voted = models.BooleanField(default = True)
 
     
     def save(self, *args, **kwargs):
         super(Vote  , self).save(*args, **kwargs)
 
         if self.team.country==self.match.team1.country:
-          self.match.votes_team1 = F('votes_team1')+1
+          self.match.votes_team1 = F('votes_team1')+1 
+       
         else:
 
               self.match.votes_team2 = F('votes_team2')+1
-
+     
         self.match.save()
 
     def __str__(self):
