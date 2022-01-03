@@ -53,7 +53,7 @@ class TicketSerializer(serializers.ModelSerializer):
 
     def to_representation(self, instance):
         rep = super(TicketSerializer, self).to_representation(instance)
-        rep['match'] = instance.match.title
+        rep['match'] = {"title":instance.match.title,"match_date":instance.match.match_date}
         return rep
 
 

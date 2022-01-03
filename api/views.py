@@ -7,7 +7,8 @@ from rest_framework import generics, response,decorators, permissions,status, mi
 from django.contrib import messages
 from django.conf import settings
 from django.http import HttpResponse
-
+from django.shortcuts import redirect
+from django.http import HttpResponseRedirect
 from django.core.mail import send_mail
 
 
@@ -54,8 +55,8 @@ def buyticket(request):
         [request.user.email],
         fail_silently=False,
     )
-
-    return HttpResponse('Mail successfully sent')
+    response = redirect('google.com')
+    return HttpResponseRedirect("http://localhost:3000/TicketSubmit")
 
 
 class MatchViewSet(viewsets.ModelViewSet): # new
