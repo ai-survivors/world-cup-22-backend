@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Ticket,Team,Match,Vote,New
+from .models import Ticket,Team,Match,Vote,New,Feedback
 
 
 
@@ -55,6 +55,20 @@ class NewsAdmin(admin.ModelAdmin):
         'img',
         'link',
         'date'
+        
+    ]
+    
+
+    
+@admin.register(Feedback)
+class FeedbackAdmin(admin.ModelAdmin):
+
+   
+    list_display = [
+        'name',
+        'email',
+        'message',
+      
         
     ]
     

@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from worldcup22.models import Ticket,Match,Team,Vote,New
+from worldcup22.models import Ticket,Match,Team,Vote,New,Feedback
 from django.contrib.auth import get_user_model 
 
 from rest_framework.permissions import IsAuthenticated
@@ -101,6 +101,12 @@ class NewsSerializer(serializers.ModelSerializer):
     class Meta:
         model = New
         fields = '__all__'
+
+class FeedbackSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Feedback
+        fields = '__all__'
+
 
 
 class UserSerializer(serializers.ModelSerializer): # new

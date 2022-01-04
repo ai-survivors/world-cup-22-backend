@@ -91,3 +91,13 @@ class New(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Feedback(models.Model):
+    name = models.CharField(max_length=64)
+    email=  models.CharField(max_length=128)
+    message=  models.TextField(default="",)
+   
+
+    def __str__(self):
+        return self.name
