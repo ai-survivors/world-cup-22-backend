@@ -1,5 +1,5 @@
-from worldcup22.models import Ticket,Match,Team,Vote,New
-from .serializers import TicketSerializer,UserSerializer,MatchSerializer,TeamSerializer,UserCreateSerializer,VoteSerializer,NewsSerializer
+from worldcup22.models import Ticket,Match,Team,Vote,New,Feedback
+from .serializers import TicketSerializer,UserSerializer,MatchSerializer,TeamSerializer,UserCreateSerializer,VoteSerializer,NewsSerializer,FeedbackSerializer
 from django.contrib.auth import get_user_model
 from .permissions import IsOwnerOrReadOnly
 from rest_framework.response import Response
@@ -7,7 +7,8 @@ from rest_framework import generics, response,decorators, permissions,status, mi
 from django.contrib import messages
 from django.conf import settings
 from django.http import HttpResponse
-
+from django.shortcuts import redirect
+from django.http import HttpResponseRedirect
 from django.core.mail import send_mail
 
 
@@ -36,7 +37,7 @@ class RegistrationViewSet(viewsets.ModelViewSet):
 
 
 
-class TicketViewSet(viewsets.ModelViewSet): # new
+class TicketViewSet(viewsets.ModelViewSet): 
     permission_classes = (IsOwnerOrReadOnly,)
     queryset = Ticket.objects.all()
     serializer_class = TicketSerializer
@@ -54,8 +55,7 @@ def buyticket(request):
         [request.user.email],
         fail_silently=False,
     )
-
-    return HttpResponse('Mail successfully sent')
+    return HttpResponseRedirect("http://localhost:3000/Profile")
 
 
 class MatchViewSet(viewsets.ModelViewSet): # new
@@ -105,6 +105,16 @@ class NewsViewSet(viewsets.ModelViewSet): # new
 
 
 
+
+
 class UserViewSet(viewsets.ModelViewSet): 
     queryset = get_user_model().objects.all()
     serializer_class = UserSerializer
+
+
+class FeedbackViewSet(viewsets.ModelViewSet): 
+    queryset = Feedback.objects.all()
+    serializer_class = FeedbackSerializer
+
+
+    

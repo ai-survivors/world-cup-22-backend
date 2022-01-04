@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from worldcup22.models import Ticket,Match,Team,Vote,New
+from worldcup22.models import Ticket,Match,Team,Vote,New,Feedback
 from django.contrib.auth import get_user_model 
 
 from rest_framework.permissions import IsAuthenticated
@@ -53,7 +53,7 @@ class TicketSerializer(serializers.ModelSerializer):
 
     def to_representation(self, instance):
         rep = super(TicketSerializer, self).to_representation(instance)
-        rep['match'] = instance.match.title
+        rep['match'] = {"title":instance.match.title,"match_date":instance.match.match_date}
         return rep
 
 
@@ -66,8 +66,8 @@ class MatchSerializer(serializers.ModelSerializer):
 
     def to_representation(self, instance):
         rep1 = super(MatchSerializer, self).to_representation(instance)
-        rep1['team1'] = {"country":instance.team1.country,"flag":instance.team1.flag}
-        rep1['team2'] = {"country":instance.team2.country,"flag":instance.team2.flag}
+        rep1['team1'] = {"country":instance.team1.country,"flag":instance.team1.flag,"team1_id":instance.team1.id}
+        rep1['team2'] = {"country":instance.team2.country,"flag":instance.team2.flag,"team2_id":instance.team2.id}
         
 
         return rep1
@@ -89,8 +89,9 @@ class VoteSerializer(serializers.ModelSerializer):
 
         rep1 = super(VoteSerializer, self).to_representation(instance)
         rep1['owner'] = instance.owner.username
-        rep1['match'] = instance.match.title
+        rep1['match'] = {"matchid":instance.match.id,"title":instance.match.title,"team1":instance.match.team1.country,"team2":instance.match.team2.country}
         rep1['team'] = instance.team.country
+        
 
         
 
@@ -100,6 +101,12 @@ class NewsSerializer(serializers.ModelSerializer):
     class Meta:
         model = New
         fields = '__all__'
+
+class FeedbackSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Feedback
+        fields = '__all__'
+
 
 
 class UserSerializer(serializers.ModelSerializer): # new
