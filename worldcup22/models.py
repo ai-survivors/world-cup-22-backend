@@ -19,6 +19,12 @@ class Match(models.Model):
     title = models.CharField(max_length=64)
     stadium = models.CharField(max_length=64,default="")
     number_of_tickets=models.IntegerField(default=40000)
+    number_of_tickets_A=models.IntegerField(default=2000)
+    number_of_tickets_B=models.IntegerField(default=3000)
+    number_of_tickets_C=models.IntegerField(default=15000)
+    number_of_tickets_D=models.IntegerField(default=20000)
+
+
     team1 = models.ForeignKey(
         Team,related_name='team1', on_delete=models.CASCADE, null=True, blank=True
     )
@@ -44,14 +50,23 @@ class Ticket(models.Model):
     match = models.ForeignKey(
         Match, on_delete=models.CASCADE, null=True, blank=True
     )
-
+    ticket_class=models.CharField(max_length=64)
     created_date = models.DateTimeField(auto_now_add = True)
     updated_date = models.DateTimeField(auto_now = True)
   
     
     def save(self, *args, **kwargs):
         super(Ticket, self).save(*args, **kwargs)
+
         self.match.number_of_tickets = F('number_of_tickets')-1
+        if self.ticket_class=="A":
+            self.match.number_of_tickets_A = F('number_of_tickets_A')-1
+        if self.ticket_class=="B":
+            self.match.number_of_tickets_B = F('number_of_tickets_B')-1
+        if self.ticket_class=="C":
+            self.match.number_of_tickets_C = F('number_of_tickets_C')-1
+        if self.ticket_class=="D":
+            self.match.number_of_tickets_D = F('number_of_tickets_D')-1
         self.match.save()
 
     def __str__(self):
