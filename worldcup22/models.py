@@ -42,7 +42,13 @@ class Match(models.Model):
     def __str__(self):
         return self.title
     
+TICKETS_CLASSES=(
+    ('A','A'),
+    ('B','B'),
+    ('C','C'),
+    ('D','D'),
 
+    )
 class Ticket(models.Model):
     owner = models.ForeignKey( get_user_model(), on_delete=models.CASCADE, null=True, blank=True )
     description = models.TextField(default="", null=True, blank=True)
@@ -50,7 +56,7 @@ class Ticket(models.Model):
     match = models.ForeignKey(
         Match, on_delete=models.CASCADE, null=True, blank=True
     )
-    ticket_class=models.CharField(max_length=64)
+    ticket_class=models.CharField(max_length=64,choices=TICKETS_CLASSES)
     created_date = models.DateTimeField(auto_now_add = True)
     updated_date = models.DateTimeField(auto_now = True)
   
