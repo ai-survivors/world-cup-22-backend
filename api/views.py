@@ -1,5 +1,5 @@
-from worldcup22.models import Ticket,Match,Team,Vote,New
-from .serializers import TicketSerializer,UserSerializer,MatchSerializer,TeamSerializer,UserCreateSerializer,VoteSerializer,NewsSerializer
+from worldcup22.models import Ticket,Match,Team,Vote,New,Feedback
+from .serializers import TicketSerializer,UserSerializer,MatchSerializer,TeamSerializer,UserCreateSerializer,VoteSerializer,NewsSerializer,FeedbackSerializer
 from django.contrib.auth import get_user_model
 from .permissions import IsOwnerOrReadOnly
 from rest_framework.response import Response
@@ -103,6 +103,18 @@ class NewsViewSet(viewsets.ModelViewSet): # new
         headers = self.get_success_headers(serializer.data)
         return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
 
+
+
+
+
 class UserViewSet(viewsets.ModelViewSet): 
     queryset = get_user_model().objects.all()
     serializer_class = UserSerializer
+
+
+class FeedbackViewSet(viewsets.ModelViewSet): 
+    queryset = Feedback.objects.all()
+    serializer_class = FeedbackSerializer
+
+
+    
