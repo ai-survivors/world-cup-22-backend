@@ -55,7 +55,7 @@ def buyticket(request):
         [request.user.email],
         fail_silently=False,
     )
-    return HttpResponseRedirect("http://localhost:3000/Profile")
+    return HttpResponseRedirect("https://fifa-qatar-2022.herokuapp.com/Profile")
 
 
 class MatchViewSet(viewsets.ModelViewSet): # new
