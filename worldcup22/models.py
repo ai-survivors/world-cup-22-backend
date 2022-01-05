@@ -59,6 +59,7 @@ class Ticket(models.Model):
     ticket_class=models.CharField(max_length=64,choices=TICKETS_CLASSES)
     created_date = models.DateTimeField(auto_now_add = True)
     updated_date = models.DateTimeField(auto_now = True)
+    certificate = models.TextField(default="", null=True, blank=True)
   
     
     def save(self, *args, **kwargs):

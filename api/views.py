@@ -46,7 +46,7 @@ class TicketViewSet(viewsets.ModelViewSet):
 def buyticket(request):
     username=request.user.username
 
-    message=f'Hello {username} thanks for your request We have checked your Vaccination Certificate and It was Correct Here is Your ticket Link'
+    message=f'Hello {username} thanks for your request We have checked your Vaccination Certificate and It was Correct Here is Your ticket Link https://world-cup-22-frontend.vercel.app/Profile'
 
     send_mail(
        'Qatar 2022 Buying ticket',
